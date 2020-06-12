@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import Layout from "../components/layout"
-import timesSquareImage from "../assets/times-square.jpg"
-import atgOffice from "../assets/atg-office.jpg"
-import damonsCubicle from "../assets/damons-cubicle.jpg"
+import timesSquareImage from "../assets/times-square1.jpg"
+import atgOffice from "../assets/atg-office1.jpg"
+import damonsCubicle from "../assets/damons-cubicle1.jpg"
 
 const IndexPage = () => {
 
