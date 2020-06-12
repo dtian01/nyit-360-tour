@@ -1,5 +1,8 @@
 import React, { useEffect } from "react"
 import Layout from "../components/layout"
+import timesSquareImage from "../assets/times-square.jpg"
+import atgOffice from "../assets/atg-office.jpg"
+import damonsCubicle from "../assets/damons-cubicle.jpg"
 
 const IndexPage = () => {
 
@@ -10,9 +13,8 @@ const IndexPage = () => {
         "sceneFadeDuration": 1000,
         "autoLoad": true,
         "autoRotate": 2,
-        "mouseZoom": false
+        "mouseZoom": false,
       },
-
       "scenes": {
         "circle": {
           "title": "ATG Office",
@@ -20,13 +22,13 @@ const IndexPage = () => {
           "pitch": -3,
           "yaw": 317,
           "type": "equirectangular",
-          "panorama": "https://raw.githubusercontent.com/dtian01/dtian01.github.io/master/assets/2.jpg",
+          "panorama": `${atgOffice}`,
           "hotSpots": [
             {
               "pitch": -1.3,
               "yaw": 129,
               "type": "scene",
-              "text": "Click here to go to Time's Square",
+              "text": "Click here to check out Time's Square",
               "sceneId": "timesquare",
               "cssClass": "big-arrow"
             },
@@ -37,7 +39,14 @@ const IndexPage = () => {
               "text": "Click here to take a walk inside Damon's cubicle",
               "sceneId": "cubicle",
               "cssClass": "big-arrow"
-            }
+            },
+            {
+              "pitch": -0.5,
+              "yaw": -125,
+              "type": "info",
+              "text": "The office of Dost Khalique, the Director of the Academic Technologies Group.",
+              "URL": "https://www.linkedin.com/in/dostkhalique"
+            },
           ]
         },
         "cubicle": {
@@ -45,7 +54,7 @@ const IndexPage = () => {
           "hfov": 110,
           "yaw": 5,
           "type": "equirectangular",
-          "panorama": "https://raw.githubusercontent.com/dtian01/dtian01.github.io/master/assets/1.jpg",
+          "panorama": `${damonsCubicle}`,
           "hotSpots": [
             {
               "pitch": -10,
@@ -64,7 +73,7 @@ const IndexPage = () => {
           "hfov": 110,
           "yaw": 5,
           "type": "equirectangular",
-          "panorama": "https://i.postimg.cc/WbzRFvym/2-D-Times-Square.jpg",
+          "panorama": `${timesSquareImage}`,
           "hotSpots": [
             {
               "pitch": 8,
