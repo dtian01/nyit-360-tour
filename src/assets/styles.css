@@ -6,26 +6,16 @@ main {
   width: 1024;
   height: 768px;
 }
-.custom__button {
-  background-color: hsl(228, 52%, 50%);
-  border: 1px solid hsl(228, 52%, 75%);
-}
 .big-arrow {
   background-image: url('./arrow.png');
   height: 40px;
   width: 40px;
   background-size: cover;
 }
-.heading__top {
-  /* display: grid;
-  grid-template-columns: 50% 50%; */
-}
 #section__tour > #panorama {
   min-height: 300px;
-  /* height: 70vh */
 }
 #section__heading {
-  /* height: 30vh */
 }
 @media (max-width: 992px) {
   .heading__top {
@@ -42,7 +32,4 @@ main {
   .heading__top > p {
     display: none;
   }
-  /* #section__tour > #panorama {
-    height: 60vh;
-  } */
 }

@@ -81,8 +81,8 @@ const SimulationCenter = () => {
     <Layout>
       <section id="section__heading" className="p-8">
         <div className="heading__top">
-          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl mb-8">NYITCOM Simulation Center 360° Tour</h1>
-          <p className="max-w-sm text-sm text-gray-400">NYIT is committed to training osteopathic physicians for a lifetime of learning and practice, based upon the integration of evidence-based knowledge, critical thinking, and the tenets of osteopathic principles and practice.</p>
+          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl mb-6">NYITCOM Simulation Center 360° Tour</h1>
+          <Link to={"/"} className="bg-black border-2 border-gray-400 custom__button inline-block p-2 rounded-sm text-center text-white" >See ATG Office in 360°</Link>
         </div>
       </section>
       <section id="section__tour">

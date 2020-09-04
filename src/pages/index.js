@@ -97,8 +97,8 @@ const IndexPage = () => {
     <Layout>
       <section id="section__heading" className="px-8 py-8">
         <div className="heading__top">
-          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl mb-8">NYITCOM Academic Technologies Group 360° Office Tour</h1>
-          <Link to={"/simulation-center"} className="bg-blue-500 custom__button flex rounded-sm text-center text-white w-48" >See Simulation Center 360°</Link>
+          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl mb-6">NYITCOM Academic Technologies Group 360° Office Tour</h1>
+          <Link to={"/simulation-center"} className="bg-black border-2 border-gray-400 custom__button inline-block p-2 rounded-sm text-center text-white" >See Simulation Center in 360°</Link>
         </div>
       </section>
       <section id="section__tour">
