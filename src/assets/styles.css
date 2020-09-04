@@ -17,15 +17,15 @@ main {
   background-size: cover;
 }
 .heading__top {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /* display: grid;
+  grid-template-columns: 50% 50%; */
 }
 #section__tour > #panorama {
   min-height: 300px;
-  height: 70vh
+  /* height: 70vh */
 }
 #section__heading {
-  height: 30vh
+  /* height: 30vh */
 }
 @media (max-width: 992px) {
   .heading__top {
@@ -42,7 +42,7 @@ main {
   .heading__top > p {
     display: none;
   }
-  #section__tour > #panorama {
+  /* #section__tour > #panorama {
     height: 60vh;
-  }
+  } */
 }

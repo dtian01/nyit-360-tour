@@ -15,7 +15,7 @@ const IndexPage = () => {
         "autoLoad": true,
         "autoRotate": 2,
         "mouseZoom": false,
-        "hotSpotDebug": true
+        // "hotSpotDebug": true
       },
       "scenes": {
         "circle": {
@@ -32,6 +32,7 @@ const IndexPage = () => {
               "type": "scene",
               "text": "Click here to check out Time's Square",
               "sceneId": "timesquare",
+              "cssClass": "big-arrow"
             },
             {
               "pitch": -3,
@@ -96,14 +97,8 @@ const IndexPage = () => {
     <Layout>
       <section id="section__heading" className="px-8 py-8">
         <div className="heading__top">
-          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl">NYITCOM Academic Technologies Group 360° Office Tour</h1>
-          <Link to={"/simulation-center"} className="bg-blue-500 flex items-center justify-center text-center rounded-sm text-white w-48 custom__button" >See Simulation Center 360°</Link>
-        </div>
-        <div className="heading__bottom grid grid-cols-4 mt-8 items-center">
-          <a className="underline" href="/medicine/contact">Request more information</a>
-          <a className="underline" href="https://www.nyit.edu/medicine/how_to_apply">How to Apply</a>
-          <a className="donate__button underline" href="https://apps2.nyit.edu/medicine/donate/">Donate to NYITCOM</a>
-          <a className="bg-blue-500 px-5 py-2 rounded-sm text-white w-48 custom__button" href="https://nyit.edu/medicine">Visit NYIT's website</a>
+          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl mb-8">NYITCOM Academic Technologies Group 360° Office Tour</h1>
+          <Link to={"/simulation-center"} className="bg-blue-500 custom__button flex rounded-sm text-center text-white w-48" >See Simulation Center 360°</Link>
         </div>
       </section>
       <section id="section__tour">

@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <main>{children}</main>
+      <main className="flex flex-col h-screen justify-between">{children}</main>
     </>
   )
 }

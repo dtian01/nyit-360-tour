@@ -16,11 +16,11 @@ const SimulationCenter = () => {
         "autoLoad": true,
         "autoRotate": 2,
         "mouseZoom": false,
-        "hotSpotDebug": true
+        // "hotSpotDebug": true
       },
       "scenes": {
         "circle": {
-          "title": "Simulation Center",
+          "title": "Simulation Center 1",
           "hfov": 110,
           "pitch": 0,
           "yaw": 140.14051451481535,
@@ -31,7 +31,7 @@ const SimulationCenter = () => {
               "pitch": 0,
               "yaw": 158.33526604303532,
               "type": "scene",
-              "text": "Click here to see Simulation 3",
+              "text": "Click here to see Simulation Center 3",
               "sceneId": "sim3",
               "cssClass": "big-arrow"
             }
@@ -49,7 +49,7 @@ const SimulationCenter = () => {
               "pitch": 0,
               "yaw": 2.0960060000186784,
               "type": "scene",
-              "text": "Click here to see Simulation 2",
+              "text": "Click here to see Simulation Center 2",
               "sceneId": "sim2",
               "cssClass": "big-arrow"
             }
@@ -67,7 +67,7 @@ const SimulationCenter = () => {
               "pitch": 0,
               "yaw": -84.20656396655201,
               "type": "scene",
-              "text": "Click here to see Simulation 1",
+              "text": "Click here to see Simulation Center 1",
               "sceneId": "circle",
               "cssClass": "big-arrow"
             }
@@ -79,16 +79,10 @@ const SimulationCenter = () => {
 
   return (
     <Layout>
-      <section id="section__heading" className="px-8 py-8">
+      <section id="section__heading" className="p-8">
         <div className="heading__top">
-          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl">NYITCOM Simulation Center 360° Tour</h1>
+          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl mb-8">NYITCOM Simulation Center 360° Tour</h1>
           <p className="max-w-sm text-sm text-gray-400">NYIT is committed to training osteopathic physicians for a lifetime of learning and practice, based upon the integration of evidence-based knowledge, critical thinking, and the tenets of osteopathic principles and practice.</p>
-        </div>
-        <div className="heading__bottom grid grid-cols-4 mt-8 items-center">
-          <a className="underline" href="/medicine/contact">Request more information</a>
-          <a className="underline" href="https://www.nyit.edu/medicine/how_to_apply">How to Apply</a>
-          <a className="donate__button underline" href="https://apps2.nyit.edu/medicine/donate/">Donate to NYITCOM</a>
-          <a className="bg-blue-500 px-5 py-2 rounded-sm text-white w-48 custom__button" href="https://nyit.edu/medicine">Visit NYIT's website</a>
         </div>
       </section>
       <section id="section__tour">
