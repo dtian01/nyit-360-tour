@@ -18,7 +18,7 @@ main {
 }
 .heading__top {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 50% 50%;
 }
 #section__tour > #panorama {
   min-height: 300px;

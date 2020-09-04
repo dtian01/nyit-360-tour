@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
-import sim1 from "../assets/sim1.jpg"
+import timesSquareImage from "../assets/times-square1.jpg"
 import atgOffice from "../assets/atg-office1.jpg"
 import damonsCubicle from "../assets/damons-cubicle1.jpg"
 
@@ -28,14 +29,9 @@ const IndexPage = () => {
             {
               "pitch": -1.3,
               "yaw": 129,
-              // "type": "scene",
-              // "text": "Click here to check out the Simulation Center",
-              // "sceneId": "sim1",
-              // "cssClass": "big-arrow"
-              "type": "info",
-              "text": "Click here to check out the Simulation Center",
-              "URL": "/simulation-center",
-              "cssClass": "big-arrow"
+              "type": "scene",
+              "text": "Click here to check out Time's Square",
+              "sceneId": "timesquare",
             },
             {
               "pitch": -3,
@@ -73,12 +69,12 @@ const IndexPage = () => {
             }
           ]
         },
-        "sim1": {
-          "title": "Simulation Center",
+        "timesquare": {
+          "title": "Times Square",
           "hfov": 110,
           "yaw": 5,
           "type": "equirectangular",
-          "panorama": `${sim1}`,
+          "panorama": `${timesSquareImage}`,
           "hotSpots": [
             {
               "pitch": 8,
@@ -101,7 +97,7 @@ const IndexPage = () => {
       <section id="section__heading" className="px-8 py-8">
         <div className="heading__top">
           <h1 className="font-extrabold leading-tight max-w-3xl text-4xl">NYITCOM Academic Technologies Group 360° Office Tour</h1>
-          <p className="max-w-sm text-sm text-gray-400">NYIT is committed to training osteopathic physicians for a lifetime of learning and practice, based upon the integration of evidence-based knowledge, critical thinking, and the tenets of osteopathic principles and practice.</p>
+          <Link to={"/simulation-center"} className="bg-blue-500 flex items-center justify-center text-center rounded-sm text-white w-48 custom__button" >See Simulation Center 360°</Link>
         </div>
         <div className="heading__bottom grid grid-cols-4 mt-8 items-center">
           <a className="underline" href="/medicine/contact">Request more information</a>
