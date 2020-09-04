@@ -1,10 +1,12 @@
 import React, { useEffect } from "react"
+import { Link } from "gatsby"
+
 import Layout from "../components/layout"
 import sim1 from "../assets/sim1.jpg"
-import atgOffice from "../assets/atg-office1.jpg"
-import damonsCubicle from "../assets/damons-cubicle1.jpg"
+import sim2 from "../assets/sim2.jpg"
+import sim3 from "../assets/sim3.jpg"
 
-const IndexPage = () => {
+const SimulationCenter = () => {
 
   useEffect(() => {
     window.pannellum.viewer('panorama', {
@@ -18,80 +20,59 @@ const IndexPage = () => {
       },
       "scenes": {
         "circle": {
-          "title": "ATG Office",
-          "hfov": 110,
-          "pitch": -3,
-          "yaw": 317,
-          "type": "equirectangular",
-          "panorama": `${atgOffice}`,
-          "hotSpots": [
-            {
-              "pitch": -1.3,
-              "yaw": 129,
-              // "type": "scene",
-              // "text": "Click here to check out the Simulation Center",
-              // "sceneId": "sim1",
-              // "cssClass": "big-arrow"
-              "type": "info",
-              "text": "Click here to check out the Simulation Center",
-              "URL": "/simulation-center",
-              "cssClass": "big-arrow"
-            },
-            {
-              "pitch": -3,
-              "yaw": 330,
-              "type": "scene",
-              "text": "Click here to take a walk inside Damon's cubicle",
-              "sceneId": "cubicle",
-              "cssClass": "big-arrow"
-            },
-            {
-              "pitch": -0.5,
-              "yaw": -125,
-              "type": "info",
-              "text": "The office of Dost Khalique, the Director of the Academic Technologies Group.",
-              "URL": "https://www.linkedin.com/in/dostkhalique"
-            },
-          ]
-        },
-        "cubicle": {
-          "title": "Damon's Cubicle",
-          "hfov": 110,
-          "yaw": 5,
-          "type": "equirectangular",
-          "panorama": `${damonsCubicle}`,
-          "hotSpots": [
-            {
-              "pitch": -10,
-              "yaw": 20,
-              "type": "scene",
-              "text": "Click here to exit Damon's cubicle",
-              "sceneId": "circle",
-              "targetYaw": -20,
-              "targetPitch": 2,
-              "cssClass": "big-arrow"
-            }
-          ]
-        },
-        "sim1": {
           "title": "Simulation Center",
           "hfov": 110,
-          "yaw": 5,
+          "pitch": 0,
+          "yaw": 140.14051451481535,
           "type": "equirectangular",
           "panorama": `${sim1}`,
           "hotSpots": [
             {
-              "pitch": 8,
-              "yaw": -1.5,
+              "pitch": 0,
+              "yaw": 158.33526604303532,
               "type": "scene",
-              "text": "Click here to visit the ATG Office",
-              "sceneId": "circle",
-              "targetYaw": -23,
-              "targetPitch": 2,
+              "text": "Click here to see Simulation 3",
+              "sceneId": "sim3",
               "cssClass": "big-arrow"
             }
           ]
-        }
+        },
+        "sim3": {
+          "title": "Sim 3",
+          "hfov": 110,
+          "pitch": 0,
+          "yaw": 0.14051451481535,
+          "type": "equirectangular",
+          "panorama": `${sim3}`,
+          "hotSpots": [
+            {
+              "pitch": 0,
+              "yaw": 2.0960060000186784,
+              "type": "scene",
+              "text": "Click here to see Simulation 2",
+              "sceneId": "sim2",
+              "cssClass": "big-arrow"
+            }
+          ]
+        },
+        "sim2": {
+          "title": "Sim 2",
+          "hfov": 110,
+          "pitch": 0,
+          "yaw": 103.14051451481535,
+          "type": "equirectangular",
+          "panorama": `${sim2}`,
+          "hotSpots": [
+            {
+              "pitch": 0,
+              "yaw": -84.20656396655201,
+              "type": "scene",
+              "text": "Click here to see Simulation 1",
+              "sceneId": "circle",
+              "cssClass": "big-arrow"
+            }
+          ]
+        },
       }
     });
   }, [])
@@ -100,7 +81,7 @@ const IndexPage = () => {
     <Layout>
       <section id="section__heading" className="px-8 py-8">
         <div className="heading__top">
-          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl">NYITCOM Academic Technologies Group 360° Office Tour</h1>
+          <h1 className="font-extrabold leading-tight max-w-3xl text-4xl">NYITCOM Simulation Center 360° Tour</h1>
           <p className="max-w-sm text-sm text-gray-400">NYIT is committed to training osteopathic physicians for a lifetime of learning and practice, based upon the integration of evidence-based knowledge, critical thinking, and the tenets of osteopathic principles and practice.</p>
         </div>
         <div className="heading__bottom grid grid-cols-4 mt-8 items-center">
@@ -117,4 +98,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default SimulationCenter
